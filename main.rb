@@ -15,3 +15,6 @@ class Board
         end
     end
 end
+
+#Create an object to be able to print out the board
+#Call the printBoard method based on the object created
