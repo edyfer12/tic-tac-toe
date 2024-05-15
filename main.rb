@@ -5,8 +5,8 @@
 class Board
 end
 
-#Create a class where the player can select nought or cross
-class Player
+#Create a class where the first player can select nought/cross
+class player
 end
 
 #Create an object to be able to print out the board
