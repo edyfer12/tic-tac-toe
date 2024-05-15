@@ -13,7 +13,3 @@ module Game
     class Opponent
     end
 end
-#Create an object to be able to print out the board
-board = Board.new
-#Call the printBoard method based on the object created
-board.printBoard
