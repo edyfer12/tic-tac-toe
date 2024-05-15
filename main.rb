@@ -5,9 +5,11 @@
 class Board
 end
 
-#Create a class where the first player can select nought/cross
-class player
+#Create a class where the first player can select nought/cross and select squares on grid with that X or O
+class Player
 end
+
+#Create a class where the opponent chooses grid based on X or O until game is over
 
 #Create an object to be able to print out the board
 board = Board.new
