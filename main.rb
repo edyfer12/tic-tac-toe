@@ -10,7 +10,8 @@ class Player
 end
 
 #Create a class where the opponent chooses grid based on X or O until game is over
-
+class Opponent
+end
 #Create an object to be able to print out the board
 board = Board.new
 #Call the printBoard method based on the object created
