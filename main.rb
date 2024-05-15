@@ -2,19 +2,13 @@
 #include the hash output on cell. 
 
 class Board
-    def printBoard
-        row = 0
-        while row < 3
-            col = 0
-            while col < 3
-                print "#"
-                col += 1
-            end
-            puts "\n"
-            row += 1
-        end
-    end
+end
+
+#Create a class where the player can select nought or cross
+class Player
 end
 
 #Create an object to be able to print out the board
+board = Board.new
 #Call the printBoard method based on the object created
+board.printBoard
