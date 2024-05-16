@@ -22,7 +22,6 @@ class Game
         puts '=== === ==='
         #Display the grids of the board with | split character
         puts ' ' + @board[2][0] + ' | ' + @board[2][1] + ' | ' + @board[2][2]
-
     end
     
 end
