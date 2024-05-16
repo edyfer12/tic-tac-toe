@@ -27,9 +27,18 @@ class Game
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
+    #Create a constructor method where opponent has X or O
+        #If a player has chosen X, allow the opponent to have O
+        #If a player has chosen O, allow the opponent to have X
 end
 #Create a class called Player where a player is created  
 class Player
+    #Create a constructor that randomly assigns the player nought or cross
+        #Create a variable, mark that chooses the random integer between 0 and 1
+        #If integer is 0, set to O
+        #If integer is 1, set to X
+        #The player will be either a nought or a cross
+        #Print player has been given: X / O
 end
 
 game = Game.new
