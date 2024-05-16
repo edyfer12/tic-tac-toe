@@ -1,9 +1,10 @@
 #Create a class called Game where a game of Tic Tac Toe is played
 class Game
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
-    #with two players passed in a constructor
-    def initialize(player, opponent)
+    def initialize
         #Create a player and opponent object based on player and opponent class
+        player = Player.new
+        opponent = Opponent.new
         #Print 'The game has begun'
         puts "\nThe game has begun"
         #Add an empty line
@@ -73,11 +74,13 @@ end
 #Create a class called Player where a player is created  
 class Player
     #Create a constructor that randomly assigns the player nought or cross
+    def initialize
         #Create a variable, mark that chooses the random integer between 0 and 1
         #If integer is 0, set to O
         #If integer is 1, set to X
         #The player will be either a nought or a cross
         #Print player has been given: X / O
+    end
 end
 
 game = Game.new
