@@ -2,7 +2,8 @@
 class Game
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
     #with two players passed in a constructor
-    def initialize
+    def initialize(player, opponent)
+        #Create a player and opponent object based on player and opponent class
         #Print 'The game has begun'
         puts "\nThe game has begun"
         #Add an empty line
