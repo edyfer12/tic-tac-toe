@@ -4,6 +4,7 @@ class Game
     def initialize
         #Print 'The game has begun'
         puts "\nThe game has begun"
+        #Add an empty line
         puts
         #Create an instance variable that will be used to store an array of 3 rows and columns
         #The default value of the board array will all have hash #
