@@ -26,7 +26,11 @@ class Game
     
 end
 #Create a class called Opponent where an opponent is created
+class Opponent
+end
 #Create a class called Player where a player is created  
+class Player
+end
 
 game = Game.new
 
