@@ -76,8 +76,14 @@ class Player
     #Create a constructor that randomly assigns the player nought or cross
     def initialize
         #Create a variable, mark that chooses the random integer between 0 and 1
+        @mark = rand.round(0)
         #If integer is 0, set to O
+        if @mark == 0
+            @mark = "O"
+        else
         #If integer is 1, set to X
+            @mark = "X"
+        end
         #The player will be either a nought or a cross
         #Print player has been given: X / O
     end
