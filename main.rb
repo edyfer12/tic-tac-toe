@@ -1,6 +1,7 @@
 #Create a class called Game where a game of Tic Tac Toe is played
 class Game
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
+    #with two players passed in a constructor
     def initialize
         #Print 'The game has begun'
         puts "\nThe game has begun"
@@ -23,6 +24,9 @@ class Game
         #Display the grids of the board with | split character
         puts ' ' + @board[2][0] + ' | ' + @board[2][1] + ' | ' + @board[2][2]
     end
+    #Add a method where the tic-tac-toe is played
+     
+
     #Add a method that checks if an individual grid nought or cross
         #If a selected grid has blank line, return false
         #If a selected grid has a nought or cross, return true
