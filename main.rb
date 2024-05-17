@@ -40,7 +40,7 @@ class Game
         #If the game is drawn, print "The game is tied!!!" Use the instance method to check if the game is tied
         #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
         #Use fgets to input the grid between 0,0 and 2,2
-        puts "Please select the grid: "
+        print "Please select the grid: "
         grid = gets
         #Print "Player selected: coordinates" if a grid is replaced with O or X
         puts "Player selected: #{grid}"
@@ -69,6 +69,7 @@ class Game
     
     #Add a method where the grid number selected either by the opponent or player is used to 
     #convert blank space to X or O
+    def mark_grid(grid)
         #If a grid is 0,0 and is not X or O (using instance method, check_grid_exist),
         #change board[0][0] to O or X
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
@@ -87,6 +88,7 @@ class Game
         #change board[2][1] to O or X
         #If a grid is 2,2 and is not X or O (using instance method, check_grid_exist),
         #change board[2][2] to O or X
+    end
     
 end
 #Create a class called Opponent where an opponent is created
