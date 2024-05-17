@@ -87,9 +87,15 @@ class Game
         #change board[2][2] to O or X
 
     #Add a method where a player is instructed to select the grid
-        #Print 'Please select grid, eg.(x,y): '
-        #Use fgets to input the grid between 0,0 and 2,2 and convert to integer
+    def instruct_player
+        #Use fgets to input the grid between 0,0 and 2,2
+        print "Please select the grid: "
+        grid = gets
         #Print "Player selected: coordinates" if a grid is replaced with O or X
+        puts "Player selected: #{grid}"
+        #return grid
+        grid
+    end
     
 end
 #Create a class called Opponent where an opponent is created
