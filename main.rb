@@ -97,6 +97,6 @@ class Player
     #Create a getter method where the player object regardless of the class can obtain
     #the mark value of the instance variable
 end
-
+#Create a game object
 game = Game.new
 
