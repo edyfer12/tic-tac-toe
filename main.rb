@@ -4,7 +4,7 @@ class Game
     def initialize
         #Create a player and opponent object based on player and opponent class
         player = Player.new
-        opponent = Opponent.new
+        opponent = Opponent.new(player)
         #Print 'The game has begun'
         puts "\nThe game has begun"
         #Add an empty line
