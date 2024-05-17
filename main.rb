@@ -106,6 +106,7 @@ class Opponent
         #Print opponent has been given: X / O
         puts "Opponent has been given: #{self.mark}"
     end
+    #Create a getter method to retrieve the instance variable called mark
 end
 #Create a class called Player where a player is created  
 class Player
