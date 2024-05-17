@@ -107,6 +107,7 @@ class Opponent
         puts "Opponent has been given: #{self.mark}"
     end
     #Create a getter method to retrieve the instance variable called mark
+    attr_reader :mark
 end
 #Create a class called Player where a player is created  
 class Player
