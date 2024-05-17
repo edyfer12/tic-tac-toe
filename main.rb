@@ -104,6 +104,7 @@ class Opponent
             @mark = "X"
         end
         #Print opponent has been given: X / O
+        puts "Opponent has been given: #{self.mark}"
     end
 end
 #Create a class called Player where a player is created  
