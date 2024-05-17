@@ -32,8 +32,9 @@ class Game
         self.printBoard
         #Add a newline character by placing puts
         puts
-        #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board and 
-        #opponent enters the input. Use an instance method in the loop condition to check if the player wins
+        #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
+        #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
+        #the player wins
         #If the player wins, print "You won the game!!!" Use the instance method to check if the player has won
         #If the player loses, print "You lost the game!!!" Use the instance method to check if the player has lost
         #If the game is drawn, print "The game is tied!!!" Use the instance method to check if the game is tied
