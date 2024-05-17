@@ -120,6 +120,7 @@ class Player
         end
         #The player will be either a nought or a cross
         #Print player has been given: X / O
+        puts "Player has been given: " + self.mark
     end
     #Create a getter method where the player object regardless of the class can obtain
     #the mark value of the instance variable
