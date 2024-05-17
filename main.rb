@@ -27,7 +27,32 @@ class Game
         puts ' ' + @board[2][0] + ' | ' + @board[2][1] + ' | ' + @board[2][2]
     end
     #Add a method that enables the game of tic-tac-toe to be played
+    def play
+        #Display the board
+        self.printBoard
         #Add a newline character by placing puts
+        puts
+        #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board and 
+        #opponent enters the input. Use an instance method in the loop condition to check if the player wins
+        #If the player wins, print "You won the game!!!" Use the instance method to check if the player has won
+        #If the player loses, print "You lost the game!!!" Use the instance method to check if the player has lost
+        #If the game is drawn, print "The game is tied!!!" Use the instance method to check if the game is tied
+        #Instruct the player to choose the grid(x,y) and then allow the user to input the grid
+        print "Please choose the grid (x,y): "
+        #Create a variable called playerInput that stores user input
+        playerInput = gets
+
+        #Use the instance method to convert the blank space character to the mark on the board array element
+        #The same instance method will also check if the element has a blank space character or O/X
+        
+        #Print out the board that is updated
+
+        #Print 'The Opponent has selected grid (x,y)'
+        #Use the instance method to enable the opponent to randomly select the grid
+        #The instance method will also check if the grid has X/O or empty space character
+
+        #Print out the board that is updated
+    end
 
     #Add a method that checks if an individual grid is a nought or cross
         #If a selected grid has blank character, return true
@@ -101,3 +126,4 @@ class Player
 end
 #Create a game object
 game = Game.new
+game.play
