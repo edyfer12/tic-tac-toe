@@ -103,6 +103,7 @@ class Opponent
         else
             @mark = "X"
         end
+        #Print opponent has been given: X / O
     end
 end
 #Create a class called Player where a player is created  
