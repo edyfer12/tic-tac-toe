@@ -99,4 +99,5 @@ class Player
 end
 #Create a game object
 game = Game.new
+#Invoke the play method on the Game object so the players can verse each other on tic-tac-toe
 
