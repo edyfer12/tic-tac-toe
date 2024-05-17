@@ -67,9 +67,11 @@ class Game
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
-    #Create a constructor method where opponent has X or O
+    #Create a constructor method where opponent has X or O passing in player object
+    def initialize(player)
         #If a player has chosen X, allow the opponent to have O
         #If a player has chosen O, allow the opponent to have X
+    end
 end
 #Create a class called Player where a player is created  
 class Player
