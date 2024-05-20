@@ -41,7 +41,7 @@ class Game
         #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
         #Use fgets to input the grid between 0,0 and 2,2
         print "Please select the grid: "
-        grid = gets
+        grid = gets.chomp
         #Print "Player selected: coordinates" if a grid is replaced with O or X
         puts "Player selected: #{grid}"
 
