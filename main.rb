@@ -75,6 +75,8 @@ class Game
         #Create variable called column to select random columns in a board
         col = (rand * 2).round(0)
         #Keep selecting grids between 0,0 and 2,2 until the grid does not have O or X via loop
+        until @board[row][col] == ' '
+        end
     end
     #Add a method where the grid number selected either by the opponent or player is used to 
     #convert blank space to X or O
