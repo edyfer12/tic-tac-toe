@@ -76,7 +76,7 @@ class Game
         #If a grid is 0,0 and is not X or O (using instance method, check_grid_exist),
         #change board[0][0] to O or X
         if @board[0][0] == ' ' && grid == "0,0"
-            @board[0][0] = self.mark
+            @board[0][0] = mark
         end
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
