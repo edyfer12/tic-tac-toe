@@ -79,9 +79,11 @@ class Game
         #change board[0][0] to O or X
         if @board[0][0] == ' ' && grid == "0,0"
             @board[0][0] = mark
-        end
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
+        elsif @board[0][1] == ' ' && grid == '0,1'
+            @board[0][1] = mark
+        end
         #If a grid is 0,2 and is not X or O (using instance method, check_grid_exist),
         #change board[0][2] to O or X
         #If a grid is 1,0 and is not X or O (using instance method, check_grid_exist),
