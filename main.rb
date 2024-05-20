@@ -52,7 +52,7 @@ class Game
         #The same instance method will also check if the element has a blank space character or O/X
         mark_grid(grid, @player.mark)
         #Print out the board that is updated
-
+        self.printBoard
         #Print 'The Opponent has selected grid (x,y)'
         #Use the instance method to enable the opponent to randomly select the grid
         #The instance method will also check if the grid has X/O or empty space character
