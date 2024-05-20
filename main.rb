@@ -70,6 +70,10 @@ class Game
         #Create a variable stores a random coordinate between 0,0 and 2,2 as first integer and second integer is
         #randomly chosen between 0 and 2 is convert to string with comma placed between
         random_grid = (rand * 2).round(0).to_s + "," + (rand * 2).round(0).to_s
+        #Create variable called row to select random rows in a board
+        row = (rand * 2).round(0)
+        #Create variable called column to select random columns in a board
+        col = (rand * 2).round(0)
         #Keep selecting grids between 0,0 and 2,2 until the grid does not have O or X via loop
         #Inside a loop, check if the particular grid has O or X using the instance method below
     end
