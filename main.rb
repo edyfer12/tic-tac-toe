@@ -3,8 +3,8 @@ class Game
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
     def initialize
         #Create a player and opponent object based on player and opponent class
-        player = Player.new
-        opponent = Opponent.new(player)
+        @player = Player.new
+        @opponent = Opponent.new(@player)
         #Print 'The game has begun'
         puts "\nThe game has begun"
         #Add an empty line
@@ -72,6 +72,9 @@ class Game
     def mark_grid(grid)
         #If a grid is 0,0 and is not X or O (using instance method, check_grid_exist),
         #change board[0][0] to O or X
+        if @board[0][0] == ' ' && grid == "0,0"
+            @board[0][0] = mark
+        end
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
         #If a grid is 0,2 and is not X or O (using instance method, check_grid_exist),
