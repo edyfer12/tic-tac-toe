@@ -59,6 +59,7 @@ class Game
         #Use the instance method for the opponent to take turn marking the grid
         mark_grid(choose_random_grid, @opponent.mark)
         #Print out the board that is updated
+        self.printBoard
     end
 
     #Add a method that checks if an individual grid is a nought or cross
