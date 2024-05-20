@@ -65,11 +65,12 @@ class Game
         #If a selected grid has a nought or cross, return false
     
     #Add a method where the opponent randomly chooses a grid
+    def choose_random_grid
         #Create a variable stores a random coordinate between 0,0 and 2,2 as first integer and second integer is
         #randomly chosen between 0 and 2 is convert to string with comma placed between
         #Keep selecting grids between 0,0 and 2,2 until the grid does not have O or X via loop
         #Inside a loop, check if the particular grid has O or X using the instance method below
-    
+    end
     #Add a method where the grid number selected either by the opponent or player is used to 
     #convert blank space to X or O
     def mark_grid(grid, mark)
