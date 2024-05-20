@@ -47,7 +47,7 @@ class Game
 
         #Use the instance method to convert the blank space character to the mark on the board array element
         #The same instance method will also check if the element has a blank space character or O/X
-        
+        mark_grid(grid)
         #Print out the board that is updated
 
         #Print 'The Opponent has selected grid (x,y)'
