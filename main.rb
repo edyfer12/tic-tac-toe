@@ -128,7 +128,15 @@ class Game
             @board[2][2] = mark
         end
     end
-    
+    #Create an instance variable to check if the player has won, lost or drawn
+        #If the player has scored three marks in a row horizontally, vertically or diagonally,
+            #Notify the player by printing 'You won the game'
+        #If the player has lost against the opponent where opponent has three marks in a row
+        #horizontally, vertically or diagonally, 
+            #Notify the player by printing 'You lost the game'
+        #If the player has drawn where there are no three marks in a row horizonally, vertically,
+        #not diagonally, and there are 9 marks on a board with X and O
+            #Notify the player by printing 'You have tied the game' 
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
