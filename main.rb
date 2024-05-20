@@ -15,6 +15,7 @@ class Game
         #Create an instance variable that will be used to store an array of 3 rows and columns
         #The default value of the board array will all have hash #
         @board = Array.new(3){Array.new(3, ' ')}
+        #Create a variable where the array of grids where player places a mark is stored
     end
     #Add a method that prints out the board
     def printBoard
