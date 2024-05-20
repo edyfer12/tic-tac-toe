@@ -56,6 +56,7 @@ class Game
         #Print 'The Opponent has selected grid (x,y)'
         #Use the instance method to enable the opponent to randomly select the grid
         puts "The Opponent has selected grid #{choose_random_grid}"
+        #Use the instance method for the opponent to take turn marking the grid
         #Print out the board that is updated
     end
 
