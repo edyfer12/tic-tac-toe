@@ -76,6 +76,7 @@ class Game
         col = (rand * 2).round(0)
         #Keep selecting grids between 0,0 and 2,2 until the grid does not have O or X via loop
         until @board[row][col] == ' '
+            #Reassign row and columns to random values
         end
     end
     #Add a method where the grid number selected either by the opponent or player is used to 
