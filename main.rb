@@ -1,6 +1,7 @@
 #Create a class called Game where a game of Tic Tac Toe is played
 class Game
     #Add getter method to retrive the mark from both the player and the opponent
+    attr_reader :mark
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
     def initialize
         #Create a player and opponent object based on player and opponent class
