@@ -38,9 +38,6 @@ class Game
         #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
         #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
         #the player wins
-        #If the player wins, print "You won the game!!!" Use the instance method to check if the player has won
-        #If the player loses, print "You lost the game!!!" Use the instance method to check if the player has lost
-        #If the game is drawn, print "The game is tied!!!" Use the instance method to check if the game is tied
         #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
         #Use fgets to input the grid between 0,0 and 2,2
         print "Please select the grid: "
