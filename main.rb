@@ -1,9 +1,6 @@
 require "pry-byebug"
 #Create a class called Game where a game of Tic Tac Toe is played
 class Game
-    #Create constant variable where the array of grids are stored for the player if the game is won
-    #Create constant variable where the array of grids are stored for the opponent if the game is lost
-    #Create an instance method where the number of marks are displayed on the grid
     #Add getter method to retrive the mark from both the player and the opponent
     attr_reader :mark
     #Add an constructor method that is used to create the board with 9 elements which is 2d array
