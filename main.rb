@@ -1,3 +1,4 @@
+require "pry-byebug"
 #Create a class called Game where a game of Tic Tac Toe is played
 class Game
     #Add getter method to retrive the mark from both the player and the opponent
@@ -49,7 +50,7 @@ class Game
 
         #Use the instance method to convert the blank space character to the mark on the board array element
         #The same instance method will also check if the element has a blank space character or O/X
-        mark_grid(grid)
+        mark_grid(grid, @player.mark)
         #Print out the board that is updated
 
         #Print 'The Opponent has selected grid (x,y)'
@@ -71,7 +72,7 @@ class Game
     
     #Add a method where the grid number selected either by the opponent or player is used to 
     #convert blank space to X or O
-    def mark_grid(grid)
+    def mark_grid(grid, mark)
         #If a grid is 0,0 and is not X or O (using instance method, check_grid_exist),
         #change board[0][0] to O or X
         if @board[0][0] == ' ' && grid == "0,0"
