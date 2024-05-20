@@ -54,8 +54,8 @@ class Game
         #Print out the board that is updated
         self.printBoard
         #Print 'The Opponent has selected grid (x,y)'
-        puts "The Opponent has selected grid #{choose_random_grid}"
         #Use the instance method to enable the opponent to randomly select the grid
+        puts "The Opponent has selected grid #{choose_random_grid}"
         #The instance method will also check if the grid has X/O or empty space character
 
         #Print out the board that is updated
