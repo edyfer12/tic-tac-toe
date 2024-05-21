@@ -47,6 +47,7 @@ class Game
         puts
         #Create a variable that counts number of marks from both opponent and player
         @mark_count = 0
+        #Invoke a method where keep_playing is set to true
         keep_playing
         while keep_playing == true do
             #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
@@ -199,6 +200,7 @@ class Game
             puts "You have tied the game"
             return(false)
         end
+        #Return the instance method true to indicate the game is currently playing
     end
     #Create an instance variable that checks if the player has won the game
         #Set row to 0
