@@ -47,6 +47,7 @@ class Game
         puts
         #Create a variable that counts number of marks from both opponent and player
         @mark_count = 0
+        keep_playing
         while keep_playing == true do
             #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
             #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
