@@ -174,7 +174,7 @@ class Game
         end
     end
     #Create an instance variable to check if the player has won, lost or drawn
-    def check_result
+    def keep_playing
         #If the player has scored three marks in a row horizontally, vertically or diagonally,
         if @won_grids.all(@player.mark)
             #Notify the player by printing 'You won the game'
