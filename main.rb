@@ -58,6 +58,7 @@ class Game
         #Use the instance method to convert the blank space character to the mark on the board array element
         #The same instance method will also check if the element has a blank space character or O/X
         mark_grid(grid, @player.mark)
+        update_won_grids
         #Print out the board that is updated
         self.printBoard
         #Create variable called opponent grid that stores value which chose random grid
@@ -75,11 +76,17 @@ class Game
         #If a selected grid has blank character, return true
         #If a selected grid has a nought or cross, return false
     
-    #Add a method that replaces the blank space character with a mark on the won_grids array
+    #Add a method where the @won_grids array is updated after the mark is updated on the 
+    #@board element
     def update_won_grids
-        #For each nested array, search for each element based on the specific board grid
-        #If the specific board grid is found, replace the blank space with mark from either opponent
-        #or player
+        #Set row to 0 for the @won_grids array
+        #Loop through the each row of the @won_grids array
+            #Set col to 0 for the @won_grids array while column is less than length of @won_grids row
+            #Loop through each column of the @won_grids array
+                #If the element for @board array is equal to @won_grids element of the array,
+                #Set @won_grids element to @board element
+                #Increase column by one
+            #Increase row by one while row is less than length of @won_grids array
     end
     
     #Add a method where the opponent randomly chooses a grid
@@ -110,9 +117,9 @@ class Game
             @board[0][0] = mark
             #If the player or opponent marks on the @board[0][0], store the mark on the won_grids
             #array nested element where is @board[0][0]  
-            @won_grids[0][0] = @board[0][0]
-            @won_grids[3][0] = @board[0][0]
-            @won_grids[4][0] = @board[0][0]
+            #@won_grids[0][0] = @board[0][0]
+            #@won_grids[3][0] = @board[0][0]
+            #@won_grids[4][0] = @board[0][0]
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
         elsif @board[0][1] == ' ' && grid == '0,1'
