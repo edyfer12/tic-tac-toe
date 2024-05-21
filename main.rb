@@ -211,8 +211,8 @@ class Game
         while row < @won_grids.length
             #For each row, check if the row contains all the marks of the player,
             if @won_grids[row].all?(@player.mark)
-            #If so, terminate the loop
-            return(true)
+                #If so, terminate the loop
+                return(true)
             end
             #Increase each row by 1
             row += 1
