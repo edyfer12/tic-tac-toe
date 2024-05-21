@@ -77,7 +77,7 @@ class Game
     
     #Add a method where the @won_grids array is updated after the mark is updated on the 
     #@board element
-    def update_won_grids
+    def update_won_grids(board_element)
         #Set row to 0 for the @won_grids array
         #Loop through the each row of the @won_grids array
             #Set col to 0 for the @won_grids array while column is less than length of @won_grids row
