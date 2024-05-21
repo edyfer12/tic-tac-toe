@@ -16,6 +16,15 @@ class Game
         #The default value of the board array will all have hash #
         @board = Array.new(3){Array.new(3, ' ')}
         #Create a variable where the array of grids where player places a mark is stored
+        @won_grids = [
+            [@board[0][0], @board[0][1], @board[0][2]] || 
+            [@board[1][0], @board[1][1], @board[1][2]] ||
+            [@board[2][0], @board[2][1], @board[2][2]] ||
+            [@board[0][0], @board[1][1], @board[2][2]] ||
+            [@board[0][0], @board[1][0], @board[2][0]] ||
+            [@board[0][1], @board[1][1], @board[2][1]] ||
+            [@board[0][2], @board[1][2], @board[2][2]]
+        ]
     end
     #Add a method that prints out the board
     def printBoard
