@@ -188,6 +188,7 @@ class Game
             return(false)
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
+        else
             #Notify the player by printing 'You have tied the game' 
     end
 end
