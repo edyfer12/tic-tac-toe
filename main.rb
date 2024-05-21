@@ -101,6 +101,8 @@ class Game
         #change board[0][0] to O or X
         if @board[0][0] == ' ' && grid == "0,0"
             @board[0][0] = mark
+            #If the player or opponent marks on the @board[0][0], store the mark on the won_grids
+            #array nested element where is @board[0][0]  
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
         elsif @board[0][1] == ' ' && grid == '0,1'
