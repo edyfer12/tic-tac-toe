@@ -201,6 +201,7 @@ class Game
             return(false)
         end
         #Return the instance method true to indicate the game is currently playing
+        return(true)
     end
     #Create an instance variable that checks if the player has won the game
         #Set row to 0
