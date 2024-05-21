@@ -46,6 +46,7 @@ class Game
         #Add a newline character by placing puts
         puts
         #Create a variable that counts number of marks from both opponent and player
+        mark_count = 0
         while keep_playing == true do
             #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
             #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
@@ -61,6 +62,7 @@ class Game
             #The same instance method will also check if the element has a blank space character or O/X
             mark_grid(grid, @player.mark)
             #Add mark count by 1
+            mark_count += 1
             #Print out the board that is updated
             self.printBoard
             #Create variable called opponent grid that stores value which chose random grid
@@ -71,6 +73,7 @@ class Game
             #Use the instance method for the opponent to take turn marking the grid
             mark_grid(opponent_grid, @opponent.mark)
             #Add mark count by 1
+            mark_count += 1
             #Print out the board that is updated
             self.printBoard
         end
