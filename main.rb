@@ -178,6 +178,7 @@ class Game
         #If the player has scored three marks in a row horizontally, vertically or diagonally,
         if @won_grids.all(@player.mark)
             #Notify the player by printing 'You won the game'
+            puts "You won the game"
         end
         #If the player has lost against the opponent where opponent has three marks in a row
         #horizontally, vertically or diagonally, 
