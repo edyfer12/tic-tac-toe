@@ -182,6 +182,7 @@ class Game
             return(false)
         #If the player has lost against the opponent where opponent has three marks in a row
         #horizontally, vertically or diagonally, 
+        elsif @won_grids.all(@opponent.mark)
             #Notify the player by printing 'You lost the game'
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
