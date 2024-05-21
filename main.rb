@@ -76,9 +76,11 @@ class Game
         #If a selected grid has a nought or cross, return false
     
     #Add a method that replaces the blank space character with a mark on the won_grids array
+    def update_won_grids
         #For each nested array, search for each element based on the specific board grid
         #If the specific board grid is found, replace the blank space with mark from either opponent
         #or player
+    end
     
     #Add a method where the opponent randomly chooses a grid
     def choose_random_grid
