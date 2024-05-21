@@ -75,6 +75,11 @@ class Game
         #If a selected grid has blank character, return true
         #If a selected grid has a nought or cross, return false
     
+    #Add a method that replaces the blank space character with a mark on the won_grids array
+        #For each nested array, search for each element based on the specific board grid
+        #If the specific board grid is found, replace the blank space with mark from either opponent
+        #or player
+    
     #Add a method where the opponent randomly chooses a grid
     def choose_random_grid
         #Create a variable stores a random coordinate between 0,0 and 2,2 as first integer and second integer is
@@ -110,34 +115,50 @@ class Game
         #change board[0][1] to O or X
         elsif @board[0][1] == ' ' && grid == '0,1'
             @board[0][1] = mark
+            #If the player or opponent marks on the @board[0][1], store the mark on the won_grids
+            #array nested element where is @board[0][1] 
         #If a grid is 0,2 and is not X or O (using instance method, check_grid_exist),
         #change board[0][2] to O or X
         elsif @board[0][2] == ' ' && grid == '0,2'
             @board[0][2] = mark
+            #If the player or opponent marks on the @board[0][2], store the mark on the won_grids
+            #array nested element where is @board[0][2] 
         #If a grid is 1,0 and is not X or O (using instance method, check_grid_exist),
         #change board[1][0] to O or X
         elsif @board[1][0] == ' ' && grid == '1,0'
             @board[1][0] = mark
+            #If the player or opponent marks on the @board[1][0], store the mark on the won_grids
+            #array nested element where is @board[1][0] 
         #If a grid is 1,1 and is not X or O (using instance method, check_grid_exist),
         #change board[1][1] to O or X
         elsif @board[1][1] == ' ' && grid == '1,1'
             @board[1][1] = mark
+            #If the player or opponent marks on the @board[1][1], store the mark on the won_grids
+            #array nested element where is @board[1][1] 
         #If a grid is 1,2 and is not X or O (using instance method, check_grid_exist),
         #change board[1][2] to O or X
         elsif @board[1][2] == ' ' && grid == '1,2'
             @board[1][2] = mark
+            #If the player or opponent marks on the @board[1][2], store the mark on the won_grids
+            #array nested element where is @board[1][2] 
         #If a grid is 2,0 and is not X or O (using instance method, check_grid_exist),
         #change board[2][0] to O or X
         elsif @board[2][0] == ' ' && grid == '2,0'
             @board[2][0] = mark
+            #If the player or opponent marks on the @board[2][0], store the mark on the won_grids
+            #array nested element where is @board[2][0] 
         #If a grid is 2,1 and is not X or O (using instance method, check_grid_exist),
         #change board[2][1] to O or X
         elsif @board[2][1] == ' ' && grid == '2,1'
             @board[2][1] = mark
+            #If the player or opponent marks on the @board[2][1], store the mark on the won_grids
+            #array nested element where is @board[2][1] 
         #If a grid is 2,2 and is not X or O (using instance method, check_grid_exist),
         #change board[2][2] to O or X
         elsif @board[2][2] == ' ' && grid == '2,2'
             @board[2][2] = mark
+            #If the player or opponent marks on the @board[2][2], store the mark on the won_grids
+            #array nested element where is @board[2][2] 
         end
     end
     #Create an instance variable to check if the player has won, lost or drawn
