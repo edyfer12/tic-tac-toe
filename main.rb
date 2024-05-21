@@ -46,7 +46,6 @@ class Game
         #Add a newline character by placing puts
         puts
         while keep_playing == true do
-            check_result
         #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
         #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
         #the player wins
