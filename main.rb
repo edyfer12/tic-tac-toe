@@ -218,6 +218,22 @@ class Game
             row += 1
         end
     end
+
+    #Create an instance variable that checks if the player has won the game
+    def opponent_won?
+        #Set row to 0
+        row = 0
+        #Loop each row of the won_grids array
+        while row < @won_grids.length
+            #For each row, check if the row contains all the marks of the player,
+            if @won_grids[row].all?(@opponent.mark)
+                #If so, terminate the loop
+                return(true)
+            end
+            #Increase each row by 1
+            row += 1
+        end
+    end
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
