@@ -190,6 +190,7 @@ class Game
         #not diagonally, and there are 9 marks on a board with X and O
         else
             #Notify the player by printing 'You have tied the game' 
+            puts "You have tied the game"
     end
 end
 #Create a class called Opponent where an opponent is created
