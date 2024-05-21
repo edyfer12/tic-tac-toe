@@ -46,30 +46,30 @@ class Game
         #Add a newline character by placing puts
         puts
         while keep_playing == true do
-        #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
-        #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
-        #the player wins
-        #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
-        #Use fgets to input the grid between 0,0 and 2,2
-        print "Please select the grid: "
-        grid = gets.chomp
-        #Print "Player selected: coordinates" if a grid is replaced with O or X
-        puts "Player selected: #{grid}"
+            #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
+            #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
+            #the player wins
+            #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
+            #Use fgets to input the grid between 0,0 and 2,2
+            print "Please select the grid: "
+            grid = gets.chomp
+            #Print "Player selected: coordinates" if a grid is replaced with O or X
+            puts "Player selected: #{grid}"
 
-        #Use the instance method to convert the blank space character to the mark on the board array element
-        #The same instance method will also check if the element has a blank space character or O/X
-        mark_grid(grid, @player.mark)
-        #Print out the board that is updated
-        self.printBoard
-        #Create variable called opponent grid that stores value which chose random grid
-        opponent_grid = choose_random_grid
-        #Print 'The Opponent has selected grid (x,y)'
-        #Use the instance method to enable the opponent to randomly select the grid
-        puts "The Opponent has selected grid #{opponent_grid}"
-        #Use the instance method for the opponent to take turn marking the grid
-        mark_grid(opponent_grid, @opponent.mark)
-        #Print out the board that is updated
-        self.printBoard
+            #Use the instance method to convert the blank space character to the mark on the board array element
+            #The same instance method will also check if the element has a blank space character or O/X
+            mark_grid(grid, @player.mark)
+            #Print out the board that is updated
+            self.printBoard
+            #Create variable called opponent grid that stores value which chose random grid
+            opponent_grid = choose_random_grid
+            #Print 'The Opponent has selected grid (x,y)'
+            #Use the instance method to enable the opponent to randomly select the grid
+            puts "The Opponent has selected grid #{opponent_grid}"
+            #Use the instance method for the opponent to take turn marking the grid
+            mark_grid(opponent_grid, @opponent.mark)
+            #Print out the board that is updated
+            self.printBoard
         end
     end
     
