@@ -185,6 +185,7 @@ class Game
         elsif @won_grids.all(@opponent.mark)
             #Notify the player by printing 'You lost the game'
             puts "You lost the game"
+            return(false)
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
             #Notify the player by printing 'You have tied the game' 
