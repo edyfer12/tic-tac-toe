@@ -105,7 +105,7 @@ class Game
         end
         #Create a variable stores a random coordinate between 0,0 and 2,2 as first integer and second integer is
         #randomly chosen between 0 and 2 is convert to string with comma placed between
-        random_grid = (rand * 2).round(0).to_s + "," + (rand * 2).round(0).to_s
+        random_grid = row.round(0).to_s + "," + col.round(0).to_s
     end
     #Add a method where the grid number selected either by the opponent or player is used to 
     #convert blank space to X or O
