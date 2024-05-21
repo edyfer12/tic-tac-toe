@@ -192,6 +192,7 @@ class Game
             #Notify the player by printing 'You have tied the game' 
             puts "You have tied the game"
             return(false)
+        end
     end
 end
 #Create a class called Opponent where an opponent is created
