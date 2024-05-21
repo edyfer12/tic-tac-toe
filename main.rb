@@ -45,6 +45,8 @@ class Game
         self.printBoard
         #Add a newline character by placing puts
         puts
+        while 1 do
+            check_result
         #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
         #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
         #the player wins
@@ -69,6 +71,7 @@ class Game
         mark_grid(opponent_grid, @opponent.mark)
         #Print out the board that is updated
         self.printBoard
+        end
     end
     
     #Add a method where the opponent randomly chooses a grid
