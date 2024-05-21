@@ -199,6 +199,12 @@ class Game
             return(false)
         end
     end
+    #Create an instance variable that checks if the player has won the game
+        #Set row to 0
+        #Loop each row of the won_grids array
+            #For each row, check if the row contains all the marks of the player,
+            #If so, terminate the loop
+            #Increase each row by 1
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
