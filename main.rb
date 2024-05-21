@@ -70,10 +70,6 @@ class Game
         #Print out the board that is updated
         self.printBoard
     end
-
-    #Add a method that checks if an individual grid is a nought or cross
-        #If a selected grid has blank character, return true
-        #If a selected grid has a nought or cross, return false
     
     #Add a method where the @won_grids array is updated after the mark is updated on the 
     #@board element
