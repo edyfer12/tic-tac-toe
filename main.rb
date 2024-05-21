@@ -71,19 +71,6 @@ class Game
         self.printBoard
     end
     
-    #Add a method where the @won_grids array is updated after the mark is updated on the 
-    #@board element
-    def update_won_grids(board_element)
-        #Set row to 0 for the @won_grids array
-        #Loop through the each row of the @won_grids array
-            #Set col to 0 for the @won_grids array while column is less than length of @won_grids row
-            #Loop through each column of the @won_grids array
-                #If the element for @board array is equal to @won_grids element of the array,
-                #Set @won_grids element to @board element
-                #Increase column by one
-            #Increase row by one while row is less than length of @won_grids array
-    end
-    
     #Add a method where the opponent randomly chooses a grid
     def choose_random_grid
         #Create a variable stores a random coordinate between 0,0 and 2,2 as first integer and second integer is
