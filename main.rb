@@ -200,7 +200,7 @@ class Game
             puts "You have tied the game"
             return(false)
         end
-        #Return the instance method true to indicate the game is currently playing
+        #Return the instance method to true to indicate the game is currently playing
         return(true)
     end
     #Create an instance variable that checks if the player has won the game
