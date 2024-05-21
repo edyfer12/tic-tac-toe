@@ -138,7 +138,9 @@ class Game
     #Create an instance variable to check if the player has won, lost or drawn
     def check_result
         #If the player has scored three marks in a row horizontally, vertically or diagonally,
+        if @won_grids == Array.some(@player.mark)
             #Notify the player by printing 'You won the game'
+        end
         #If the player has lost against the opponent where opponent has three marks in a row
         #horizontally, vertically or diagonally, 
             #Notify the player by printing 'You lost the game'
