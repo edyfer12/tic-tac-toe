@@ -90,6 +90,7 @@ class Game
                 mark_grid(opponent_grid, @opponent.mark)
                 #Add mark count by 1
                 @mark_count += 1
+                #Add blank line
                 #Print out the board that is updated
                 self.printBoard
                 #Add blank line
