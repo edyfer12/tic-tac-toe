@@ -293,9 +293,9 @@ class Game
         puts "grid[0] = #{grid[0]}"
         puts "type of grid[0] is #{grid[0].class}" 
         #convert first element of grid into integer
+        grid[0] = grid[0].to_i
         #convert second element of grid into integer
-        puts grid[0] = grid[0].to_i
-        puts "type of grid[0] is #{grid[0].class}"
+        grid[1] = grid[1].to_i
         #Assign first element of grid into newly created variable x
         x = grid[0] 
         #Assign second element of grid into newly created variable y
