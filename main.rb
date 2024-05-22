@@ -284,6 +284,7 @@ class Game
     end
 
     #Create an instance method that checks if the grid is valid or not
+    def grid_valid?
         #Set row to 0 to mark the start of the boards array
             #Loop through the row of the boards array
             #Set col to 0 to mark the start of the nested array
@@ -293,6 +294,7 @@ class Game
                 #2
                     #If so, return true
                     #Otherwise, return false
+    end
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
