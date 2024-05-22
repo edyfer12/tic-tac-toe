@@ -92,13 +92,15 @@ class Game
                 @mark_count += 1
                 #Print out the board that is updated
                 self.printBoard
+                #Add blank line
+                puts
                 if keep_playing == false
                     return(false)
                 end
-            end
-            #Add blank line
-            puts
+            end 
         end
+        #Add blank line
+        puts
     end
     
     #Add a method where the opponent randomly chooses a grid
