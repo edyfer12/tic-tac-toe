@@ -299,7 +299,7 @@ class Game
         #Assign second element of grid into created variable y_str
         y_str = grid[1]
         #Revert into a string
-        grid.join
+        grid = grid.join
         #Set row to 0 to mark the start of the boards array
         row = 0
         #Loop through the row of the boards array
