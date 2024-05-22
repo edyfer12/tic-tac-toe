@@ -191,13 +191,9 @@ class Game
             #Notify the player by printing 'You lost the game'
             puts "You lost the game"
             return(false)
+        end
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
-        else
-            #Notify the player by printing 'You have tied the game' 
-            puts "You have tied the game"
-            return(false)
-        end
         #Return the instance method to true to indicate the game is currently playing
         return(true)
     end
