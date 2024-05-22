@@ -55,7 +55,6 @@ class Game
             grid = gets.chomp
             #Print "Player selected: coordinates" if a grid is replaced with O or X
             puts "Player selected: #{grid}"
-
             #Use the instance method to convert the blank space character to the mark on the board array element
             #The same instance method will also check if the element has a blank space character or O/X
             mark_grid(grid, @player.mark)
@@ -63,6 +62,9 @@ class Game
             @mark_count += 1
             #Print out the board that is updated
             self.printBoard
+            if keep_playing == false
+                return(false)
+            end
             #Create variable called opponent grid that stores value which chose random grid
             opponent_grid = choose_random_grid
             #Print 'The Opponent has selected grid (x,y)'
