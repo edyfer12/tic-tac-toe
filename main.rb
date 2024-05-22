@@ -187,9 +187,11 @@ class Game
             @won_grids[2][2] = @board[2][2]
             @won_grids[3][2] = @board[2][2]
             @won_grids[7][2] = @board[2][2]
-        end
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
+        else
+            puts "You already marked the grid"
+        end
     end
     #Create an instance variable to check if the player has won, lost or drawn
     def keep_playing
