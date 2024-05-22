@@ -307,7 +307,7 @@ class Game
                 #Check if the grid entered is invalid where grid entered, such as 
                 #a letter, space, one or both of the grids is less than 0 or more than
                 #2
-                if grid == grid.include?(/[A-Za-z]/)
+                if grid == grid.match?(/[A-Za-z]/)
                     #If so, return true
                     return(true)
                     #Otherwise, return false
