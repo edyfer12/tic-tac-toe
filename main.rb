@@ -62,12 +62,12 @@ class Game
             #Use the instance method to convert the blank space character to the mark on the board array element
             #The same instance method will also check if the element has a blank space character or O/X
             mark_grid(grid, @player.mark)
+            #Print out the board that is updated
+            self.printBoard
             #If the user selects the grid that already exists, do not increment the mark count, forbid the opponent 
             #to take turns and print the same board until the user enters a grid where the value is blank space
             #Add mark count by 1
             @mark_count += 1
-            #Print out the board that is updated
-            self.printBoard
             #In case the player wins or loses, terminate the infinite loop
             if keep_playing == false
                 return(false)
