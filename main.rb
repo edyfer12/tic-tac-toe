@@ -91,6 +91,7 @@ class Game
                 #Add mark count by 1
                 @mark_count += 1
                 #Add blank line
+                puts
                 #Print out the board that is updated
                 self.printBoard
                 #Add blank line
@@ -224,11 +225,13 @@ class Game
             return (mark)
         #If a grid entered is invalid characters, then print "Grid invalid" and return "Grid invalid"
         elsif grid_invalid?(grid)
-            print "Grid invalid"
+            puts
+            puts "Grid invalid"
             return('Grid invalid')
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
         else
+            puts
             puts "Grid is already marked"
             return("Grid is already marked")
         end
