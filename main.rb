@@ -23,6 +23,7 @@ class Game
             [@board[2][0], @board[2][1], @board[2][2]],
             #Diagonal rows of where the player/opponent wins
             [@board[0][0], @board[1][1], @board[2][2]],
+            [@board[0][2], @board[1][1], @board[2][0]],
             #Vertical rows of where the player/opponent wins
             [@board[0][0], @board[1][0], @board[2][0]],
             [@board[0][1], @board[1][1], @board[2][1]],
