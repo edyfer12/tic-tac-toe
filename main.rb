@@ -71,7 +71,7 @@ class Game
             puts
             #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
             #taking a turn
-            if marked != "You already marked the grid"
+            if marked != "Grid is already marked"
                 #Add mark count by 1
                 @mark_count += 1
                 #In case the player wins or loses, terminate the infinite loop
@@ -221,6 +221,7 @@ class Game
             @won_grids[7][2] = @board[2][2]
             #Return mark
             return (mark)
+        #If a grid entered is invalid characters, then print "Grid invalid" and return "Grid invalid"
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
         else
