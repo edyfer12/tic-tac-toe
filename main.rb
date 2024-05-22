@@ -224,8 +224,8 @@ class Game
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
         else
-            puts "You already marked the grid"
-            return("You already marked the grid")
+            puts "Grid is already marked"
+            return("Grid is already marked")
         end
     end
     #Create an instance variable to check if the player has won, lost or drawn
