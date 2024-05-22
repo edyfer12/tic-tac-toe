@@ -287,14 +287,20 @@ class Game
     def grid_invalid?(grid)
         puts "grid[0] b4re = " + grid[0]
         puts grid.match?(/[A-Za-z]/)
+        #convert grid into array
         grid = grid.split(",")
         puts "grid = #{grid}"
         puts "grid[0] = #{grid[0]}"
         puts "type of grid[0] is #{grid[0].class}" 
+        #convert first element of grid into integer
+        #convert second element of grid into integer
         puts grid[0] = grid[0].to_i
         puts "type of grid[0] is #{grid[0].class}"
+        #Assign first element of grid into newly created variable x
         x = grid[0] 
+        #Assign second element of grid into newly created variable y
         y = grid[1]
+        #Revert into a string
         grid.join
         #Set row to 0 to mark the start of the boards array
         row = 0
