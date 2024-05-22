@@ -290,13 +290,13 @@ class Game
     def grid_invalid?(grid)
         #convert grid into array
         grid = grid.split(",")
-        #convert first element of grid into integer
+        #convert first element of grid into integer and store into variable x_int
         grid[0] = grid[0].to_i
-        #convert second element of grid into integer
+        #convert second element of grid into integer and store into variable y_int
         grid[1] = grid[1].to_i
-        #Assign first element of grid into newly created variable x
+        #Assign first element of grid into created variable x_str
         x = grid[0] 
-        #Assign second element of grid into newly created variable y
+        #Assign second element of grid into created variable y_str
         y = grid[1]
         #Revert into a string
         grid.join
