@@ -54,7 +54,7 @@ class Game
         #Encourage the user to keep playing until the player has won, tied or lost
         while keep_playing == true do
             #Add blank line
-            puts
+            #puts
             #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
             #Use fgets to input the grid between 0,0 and 2,2
             print "Please select the grid: "
