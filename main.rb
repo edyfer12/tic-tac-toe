@@ -291,13 +291,13 @@ class Game
         #convert grid into array
         grid = grid.split(",")
         #convert first element of grid into integer and store into variable x_int
-        grid[0] = grid[0].to_i
+        x_int = grid[0].to_i
         #convert second element of grid into integer and store into variable y_int
-        grid[1] = grid[1].to_i
+        y_int = grid[1].to_i
         #Assign first element of grid into created variable x_str
-        x = grid[0] 
+        x_str = grid[0] 
         #Assign second element of grid into created variable y_str
-        y = grid[1]
+        y_str = grid[1]
         #Revert into a string
         grid.join
         #Set row to 0 to mark the start of the boards array
@@ -311,7 +311,7 @@ class Game
                 #Check if the grid entered is invalid where grid entered, such as 
                 #a letter, space, one or both of the grids is less than 0 or more than
                 #2
-                if x > 2 || x < 0 || y > 2 || y < 0
+                if x_int > 2 || x_int < 0 || y_int > 2 || y_int < 0
                     #If so, return true
                     return(true)
                 end
