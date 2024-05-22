@@ -182,19 +182,22 @@ class Game
     #Create an instance variable to check if the player has won, lost or drawn
     def keep_playing
         #If the player has scored three marks in a row horizontally, vertically or diagonally,
-        if player_won? && @mark_count != 9
+        if player_won? && @mark_count <= 10
             #Notify the player by printing 'You won the game'
             puts "You won the game"
             return(false)
         #If the player has lost against the opponent where opponent has three marks in a row
         #horizontally, vertically or diagonally, 
-        elsif opponent_won? && @mark_count != 9
+        elsif opponent_won? && @mark_count <= 10
             #Notify the player by printing 'You lost the game'
             puts "You lost the game"
             return(false)
-        end
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
+        elsif !player_won? && !opponent_won? && @mark_count == 10
+            puts "You tied"
+            return (false)
+        end
         #Return the instance method to true to indicate the game is currently playing
         return(true)
     end
