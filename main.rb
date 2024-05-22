@@ -67,6 +67,7 @@ class Game
             self.printBoard
             #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
             #taking a turn
+            if marked != mark
             #Add mark count by 1
             @mark_count += 1
             #In case the player wins or loses, terminate the infinite loop
@@ -88,6 +89,7 @@ class Game
             if keep_playing == false
                 return(false)
             end
+        end
         end
     end
     
