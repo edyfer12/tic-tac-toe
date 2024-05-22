@@ -306,7 +306,9 @@ class Game
         grid = grid.join(',')
 
         if (x_int > 2 || x_int < 0 || y_int > 2 || y_int < 0) || 
-            !x_str.match?('[0-9]') || !y_str.match?('[0-9]') || grid.length > 3
+            x_str == nil || y_str == nil || !x_str.match?('[0-9]') || 
+            !y_str.match?('[0-9]') || x_str.match?('/s') ||  y_str.match?('/s') ||
+            grid.length > 3
             #If so, return true
             return(true)
         else
