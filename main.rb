@@ -73,8 +73,6 @@ class Game
             if keep_playing == false
                 return(false)
             end
-            #If the user selects the grid that already exists, do not increment the mark count, forbid the opponent 
-            #to take turns and print the same board until the user enters a grid where the value is blank space
             
             #Create variable called opponent grid that stores value which chose random grid
             opponent_grid = choose_random_grid
