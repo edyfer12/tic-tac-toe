@@ -97,6 +97,7 @@ class Game
                 end
             end
             #Add blank line
+            puts
         end
     end
     
