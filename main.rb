@@ -222,7 +222,7 @@ class Game
             #Return mark
             return (mark)
         #If a grid entered is invalid characters, then print "Grid invalid" and return "Grid invalid"
-        elsif grid_invalid?(grid) == true
+        elsif grid_invalid?(grid)
             print "Grid invalid"
             return('Grid invalid')
         #If the player attempts to mark the grid that is already marked, notify the user
