@@ -121,6 +121,8 @@ class Game
             @won_grids[0][0] = @board[0][0]
             @won_grids[3][0] = @board[0][0]
             @won_grids[5][0] = @board[0][0]
+            #Return mark
+            return (mark)
         #If a grid is 0,1 and is not X or O (using instance method, check_grid_exist), 
         #change board[0][1] to O or X
         elsif @board[0][1] == ' ' && grid == '0,1'
@@ -129,6 +131,8 @@ class Game
             #array nested element where is @board[0][1] 
             @won_grids[0][1] = @board[0][1]
             @won_grids[6][0] = @board[0][1] 
+            #Return mark
+            return (mark)
         #If a grid is 0,2 and is not X or O (using instance method, check_grid_exist),
         #change board[0][2] to O or X
         elsif @board[0][2] == ' ' && grid == '0,2'
@@ -138,6 +142,8 @@ class Game
             @won_grids[0][2] = @board[0][2]
             @won_grids[4][0] = @board[0][2]
             @won_grids[7][0] = @board[0][2]
+            #Return mark
+            return (mark)
         #If a grid is 1,0 and is not X or O (using instance method, check_grid_exist),
         #change board[1][0] to O or X
         elsif @board[1][0] == ' ' && grid == '1,0'
@@ -145,7 +151,9 @@ class Game
             #If the player or opponent marks on the @board[1][0], store the mark on the won_grids
             #array nested element where is @board[1][0] 
             @won_grids[1][0] = @board[1][0]
-            @won_grids[5][1] = @board[1][0] 
+            @won_grids[5][1] = @board[1][0]
+            #Return mark
+            return (mark) 
         #If a grid is 1,1 and is not X or O (using instance method, check_grid_exist),
         #change board[1][1] to O or X
         elsif @board[1][1] == ' ' && grid == '1,1'
@@ -156,6 +164,8 @@ class Game
             @won_grids[3][1] = @board[1][1]
             @won_grids[4][1] = @board[1][1]
             @won_grids[6][1] = @board[1][1]
+            #Return mark
+            return (mark)
         #If a grid is 1,2 and is not X or O (using instance method, check_grid_exist),
         #change board[1][2] to O or X
         elsif @board[1][2] == ' ' && grid == '1,2'
@@ -164,6 +174,8 @@ class Game
             #array nested element where is @board[1][2] 
             @won_grids[1][2] = @board[1][2]
             @won_grids[7][1] = @board[1][2]
+            #Return mark
+            return (mark)
         #If a grid is 2,0 and is not X or O (using instance method, check_grid_exist),
         #change board[2][0] to O or X
         elsif @board[2][0] == ' ' && grid == '2,0'
@@ -173,6 +185,8 @@ class Game
             @won_grids[2][0] = @board[2][0] 
             @won_grids[4][2] = @board[2][0]
             @won_grids[5][2] = @board[2][0]
+            #Return mark
+            return (mark)
         #If a grid is 2,1 and is not X or O (using instance method, check_grid_exist),
         #change board[2][1] to O or X
         elsif @board[2][1] == ' ' && grid == '2,1'
@@ -181,6 +195,8 @@ class Game
             #array nested element where is @board[2][1] 
             @won_grids[2][1] = @board[2][1]
             @won_grids[6][2] = @board[2][1]
+            #Return mark
+            return (mark)
         #If a grid is 2,2 and is not X or O (using instance method, check_grid_exist),
         #change board[2][2] to O or X
         elsif @board[2][2] == ' ' && grid == '2,2'
@@ -190,10 +206,12 @@ class Game
             @won_grids[2][2] = @board[2][2]
             @won_grids[3][2] = @board[2][2]
             @won_grids[7][2] = @board[2][2]
+            #Return mark
+            return (mark)
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
-        else
-            puts "You already marked the grid"
+        #else
+           #"You already marked the grid"
         end
     end
     #Create an instance variable to check if the player has won, lost or drawn
