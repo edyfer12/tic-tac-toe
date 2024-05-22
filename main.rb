@@ -312,7 +312,6 @@ class Game
                 || grid == grid.match?(/[[:space]]/)
                 #If so, return true
                 return(true)
-                #Otherwise, return false
             end
             col += 1
         end
