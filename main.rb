@@ -53,6 +53,7 @@ class Game
         @mark_count = 0
         #Encourage the user to keep playing until the player has won, tied or lost
         while keep_playing == true do
+            #Add blank line
             puts
             #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
             #Use fgets to input the grid between 0,0 and 2,2
@@ -64,9 +65,11 @@ class Game
             #The same instance method will also check if the element has a blank space character or O/X
             #Create a variable called marked where it stores the method call of mark_grid
             marked = mark_grid(grid, @player.mark)
+            #Add blank line
             puts
             #Print out the board that is updated
             self.printBoard
+            #Add blank line
             puts
             #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
             #taking a turn
@@ -80,6 +83,7 @@ class Game
                 
                 #Create variable called opponent grid that stores value which chose random grid
                 opponent_grid = choose_random_grid
+                #Add blank line
                 puts
                 #Print 'The Opponent has selected grid (x,y)'
                 #Use the instance method to enable the opponent to randomly select the grid
