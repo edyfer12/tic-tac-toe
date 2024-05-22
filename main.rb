@@ -313,6 +313,7 @@ class Game
                 #2
                 if x_int > 2 || x_int < 0 || y_int > 2 || y_int < 0 || grid.match('^\w') ||
                     grid.match('')
+                    #Add blank line
                     #If so, return true
                     return(true)
                 end
