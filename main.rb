@@ -282,6 +282,17 @@ class Game
             row += 1
         end
     end
+
+    #Create an instance method that checks if the grid is valid or not
+        #Set row to 0 to mark the start of the boards array
+            #Loop through the row of the boards array
+            #Set col to 0 to mark the start of the nested array
+            #Loop through the columns of the boards array
+                #Check if the grid entered is invalid where grid entered, such as 
+                #a letter, space, one or both of the grids is less than 0 or more than
+                #2
+                    #If so, return true
+                    #Otherwise, return false
 end
 #Create a class called Opponent where an opponent is created
 class Opponent
