@@ -62,6 +62,7 @@ class Game
             @mark_count += 1
             #Print out the board that is updated
             self.printBoard
+            #In case the player wins or loses, terminate the infinite loop
             if keep_playing == false
                 return(false)
             end
