@@ -293,6 +293,8 @@ class Game
         puts "type of grid[0] is #{grid[0].class}" 
         puts grid[0] = grid[0].to_i
         puts "type of grid[0] is #{grid[0].class}"
+        x = grid[0] 
+        y = grid[1]
         #Set row to 0 to mark the start of the boards array
         row = 0
             #Loop through the row of the boards array
