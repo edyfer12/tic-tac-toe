@@ -284,16 +284,27 @@ class Game
     end
 
     #Create an instance method that checks if the grid is valid or not
-    def grid_valid?
+    def grid_invalid?(grid)
         #Set row to 0 to mark the start of the boards array
+        row = 0
             #Loop through the row of the boards array
+            while row < @boards.length
             #Set col to 0 to mark the start of the nested array
+            col = 0
             #Loop through the columns of the boards array
+            while col < @boards[row].length
                 #Check if the grid entered is invalid where grid entered, such as 
                 #a letter, space, one or both of the grids is less than 0 or more than
                 #2
+                if grid == grid.include?(/[A-Za-z]/)
                     #If so, return true
+                    return(true)
                     #Otherwise, return false
+                end
+                col += 1
+            end
+            row += 1
+            end
     end
 end
 #Create a class called Opponent where an opponent is created
