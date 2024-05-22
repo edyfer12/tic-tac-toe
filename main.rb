@@ -49,9 +49,6 @@ class Game
         @mark_count = 0
         #Encourage the user to keep playing until the player has won, tied or lost
         while keep_playing == true do
-            #Keep looping until the game is won, lost or drawn. Until then the user enters the input, displays board,
-            #opponent enters the input and prints board. Use an instance method in the loop condition to check if 
-            #the player wins
             #Instruct the player to choose the grid(x,y) and then allow the user to input the grid 
             #Use fgets to input the grid between 0,0 and 2,2
             print "Please select the grid: "
