@@ -61,9 +61,12 @@ class Game
             puts "Player selected: #{grid}"
             #Use the instance method to convert the blank space character to the mark on the board array element
             #The same instance method will also check if the element has a blank space character or O/X
+            #Create a variable called marked where it stores the method call of mark_grid
             mark_grid(grid, @player.mark)
             #Print out the board that is updated
             self.printBoard
+            #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
+            #taking a turn
             #Add mark count by 1
             @mark_count += 1
             #In case the player wins or loses, terminate the infinite loop
