@@ -71,7 +71,7 @@ class Game
             puts
             #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
             #taking a turn
-            if marked != "Grid is already marked"
+            if marked != "Grid is already marked" && marked != "Grid invalid"
                 #Add mark count by 1
                 @mark_count += 1
                 #In case the player wins or loses, terminate the infinite loop
@@ -222,6 +222,9 @@ class Game
             #Return mark
             return (mark)
         #If a grid entered is invalid characters, then print "Grid invalid" and return "Grid invalid"
+        elsif grid_invalid?(grid)
+            print "Grid invalid"
+            return('Grid invalid')
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
         else
@@ -300,22 +303,21 @@ class Game
         #Set row to 0 to mark the start of the boards array
         row = 0
         #Loop through the row of the boards array
-        while row < @boards.length
-        #Set col to 0 to mark the start of the nested array
-        col = 0
-        #Loop through the columns of the boards array
-        while col < @boards[row].length
-            #Check if the grid entered is invalid where grid entered, such as 
-            #a letter, space, one or both of the grids is less than 0 or more than
-            #2
-            if grid == grid.match?(/[[:alpha]]]/) || x > 2 || x < 0 || y > 2 || y < 0
-                || grid == grid.match?(/[[:space]]/)
-                #If so, return true
-                return(true)
+        while row < @board.length
+            #Set col to 0 to mark the start of the nested array
+            col = 0
+            #Loop through the columns of the boards array
+            while col < @board[row].length
+                #Check if the grid entered is invalid where grid entered, such as 
+                #a letter, space, one or both of the grids is less than 0 or more than
+                #2
+                if x > 2 || x < 0 || y > 2 || y < 0
+                    #If so, return true
+                    return(true)
+                end
+                col += 1
             end
-            col += 1
-        end
-        row += 1
+            row += 1
         end
     end
 end
