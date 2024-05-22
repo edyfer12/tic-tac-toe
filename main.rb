@@ -64,14 +64,15 @@ class Game
             mark_grid(grid, @player.mark)
             #Print out the board that is updated
             self.printBoard
-            #If the user selects the grid that already exists, do not increment the mark count, forbid the opponent 
-            #to take turns and print the same board until the user enters a grid where the value is blank space
             #Add mark count by 1
             @mark_count += 1
             #In case the player wins or loses, terminate the infinite loop
             if keep_playing == false
                 return(false)
             end
+            #If the user selects the grid that already exists, do not increment the mark count, forbid the opponent 
+            #to take turns and print the same board until the user enters a grid where the value is blank space
+            
             #Create variable called opponent grid that stores value which chose random grid
             opponent_grid = choose_random_grid
             #Print 'The Opponent has selected grid (x,y)'
