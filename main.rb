@@ -195,7 +195,7 @@ class Game
         #If the player has drawn where there are no three marks in a row horizonally, vertically,
         #not diagonally, and there are 9 marks on a board with X and O
         elsif !player_won? && !opponent_won? && @mark_count == 10
-            puts "You tied"
+            puts "You tied the game"
             return (false)
         end
         #Return the instance method to true to indicate the game is currently playing
