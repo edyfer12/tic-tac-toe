@@ -222,7 +222,7 @@ class Game
             #Return mark
             return (mark)
         #If a grid entered is invalid characters, then print "Grid invalid" and return "Grid invalid"
-        elsif grid_invalid?(grid)
+        elsif grid_invalid?(grid) == true
             print "Grid invalid"
             return('Grid invalid')
         #If the player attempts to mark the grid that is already marked, notify the user
@@ -299,27 +299,14 @@ class Game
         #Assign second element of grid into created variable y_str
         y_str = grid[1]
         #Revert into a string
-        grid = grid.join
-        #Set row to 0 to mark the start of the boards array
-        row = 0
-        #Loop through the row of the boards array
-        while row < @board.length
-            #Set col to 0 to mark the start of the nested array
-            col = 0
-            #Loop through the columns of the boards array
-            while col < @board[row].length
-                #Check if the grid entered is invalid where grid entered, such as 
-                #a letter, space, one or both of the grids is less than 0 or more than
-                #2
-                if x_int > 2 || x_int < 0 || y_int > 2 || y_int < 0 || grid.match('^\w') ||
-                    grid.match('')
-                    #Add blank line
-                    #If so, return true
-                    return(true)
-                end
-                col += 1
-            end
-            row += 1
+        grid = grid.join(',')
+
+        if (x_int > 2 || x_int < 0 || y_int > 2 || y_int < 0) || 
+            !x_str.match?('[0-9]') || !y_str.match?('[0-9]') || grid.length > 3
+            #If so, return true
+            return(true)
+        else
+            return(false)
         end
     end
 end
