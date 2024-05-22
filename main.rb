@@ -67,7 +67,7 @@ class Game
             self.printBoard
             #If marked is not a mark, then do not increment mark count by 1 and forbid the opponent from
             #taking a turn
-            if marked != mark
+            if marked != "You already marked the grid"
                 #Add mark count by 1
                 @mark_count += 1
                 #In case the player wins or loses, terminate the infinite loop
@@ -213,8 +213,9 @@ class Game
             return (mark)
         #If the player attempts to mark the grid that is already marked, notify the user
         #that the grid is already is marked
-        #else
-           #"You already marked the grid"
+        else
+            puts "You already marked the grid"
+            return("You already marked the grid")
         end
     end
     #Create an instance variable to check if the player has won, lost or drawn
